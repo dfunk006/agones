@@ -16,7 +16,7 @@
 apiVersion: "agones.dev/v1"
 kind: GameServer
 metadata:
-  generateName: "unity-simple-server1-"
+  generateName: "unity-simple-server2-"
 spec:
   ports:
   - name: default
@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: unity-simple-server
-        image: gcr.io/unity-simple-udp/unity-simple-server:0.2
+        image: gcr.io/agones-images-dev/unity-simple-server:0.2.2
       resources:
         requests:
           memory: "128Mi"
